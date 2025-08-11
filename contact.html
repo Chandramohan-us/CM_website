@@ -1,61 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Chandramohan M</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Chandramohan M</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- ===== Navigation Bar ===== -->
-    <header>
-        <nav class="navbar">
-            <div class="logo"><a href="index.html">CM Portfolio</a></div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="certificates.html">Certificates</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <nav class="navbar">
+        <div class="logo"><a href="index.html">CM Portfolio</a></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="certificates.html">Certificates</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <!-- ===== Contact Section ===== -->
-    <section class="contact">
-        <div class="container">
-            <h1>Contact Me</h1>
-            <p>Let's connect! You can reach me through the form below or via my social profiles.</p>
+<section class="contact">
+    <div class="container">
+        <h1>Contact Me</h1>
 
-            <!-- Contact Form -->
-            
-            <!-- Social Links -->
-          <form id="contact-form">
-    <div class="form-group">
-        <label>Your Name</label>
-        <input type="text" name="from_name" placeholder="Enter your name" required>
+        <!-- Your Static Contact Details -->
+        <div class="contact-info">
+            <p>📧 Email: <a href="mailto:chandramohanm2005@gmail.com">chandramohanm2005@gmail.com</a></p>
+            <p>📱 Phone: <a href="tel:+918825736187">+91 88257 36187</a></p>
+            <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/chandramohan-m-09545935b" target="_blank">linkedin.com/in/chandramohan-m</a></p>
+            <p>🐙 GitHub: <a href="https://github.com/Chandramohan-us/Portfolio" target="_blank">github.com/Chandramohan-us</a></p>
+        </div>
+
+        <!-- Contact Form -->
+        <form id="contact-form">
+            <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" name="from_name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label>Your Email</label>
+                <input type="email" name="reply_to" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label>Your Message</label>
+                <textarea name="message" placeholder="Write your message..." rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
     </div>
+</section>
 
-    <div class="form-group">
-        <label>Your Email</label>
-        <input type="email" name="reply_to" placeholder="Enter your email" required>
-    </div>
-
-    
-
-    <button type="submit" class="btn">Send Message</button>
-</form>
+<footer>
+    <p>© 2025 Chandramohan M | All Rights Reserved</p>
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script src="script.js"></script>
-
-
-    <!-- ===== Footer ===== -->
-    <footer>
-        <p>© 2025 Chandramohan M | All Rights Reserved</p>
-    </footer>
-
 </body>
 </html>
