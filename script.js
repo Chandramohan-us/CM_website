@@ -1,5 +1,5 @@
 (function(){
-    emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS public key
+    emailjs.init("YOUR_PUBLIC_KEY"); // Replace with EmailJS public key
 })();
 
 document.getElementById("contact-form").addEventListener("submit", function(event) {
