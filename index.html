@@ -1,53 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chandramohan M | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chandramohan M | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- ===== Navigation ===== -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">CM Portfolio</div>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- ===== Navigation Bar ===== -->
-    <header>
-        <nav class="navbar">
-            <div class="logo"><a href="index.html">CM Portfolio</a></div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="certificates.html">Certificates</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- ===== Sections ===== -->
+  <section id="home" class="section home">
+    <h1>Hi, I'm <span>Chandramohan M</span></h1>
+    <p>AI & ML Enthusiast | Developer | Creator</p>
+    <a href="#about" class="btn">Know More</a>
+  </section>
 
-    <!-- ===== Hero Section ===== -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm <span>Chandramohan M</span></h1>
-            <p>AI & ML Enthusiast | Developer | Creator</p>
-            <a href="about.html" class="btn">Know More</a>
-        </div>
-    </section>
+  <section id="about" class="section about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Chandramohan, passionate about AI, ML, and creating digital solutions...</p>
+  </section>
 
-    <!-- ===== Quick Intro ===== -->
-    <section class="intro">
-        <h2>Welcome to My Portfolio</h2>
-        <p>
-            I’m passionate about building AI-powered applications, creating digital content,
-            and developing tools that solve real-world problems. Explore my skills,
-            projects, and certifications.
-        </p>
-        <a href="projects.html" class="btn">View My Work</a>
-    </section>
+  <section id="skills" class="section skills">
+    <h2>Skills & Tools</h2>
+    <ul>
+      <li>Python, AI Applications</li>
+      <li>Machine Learning, Deep Learning</li>
+      <li>Excel, Power BI</li>
+      <li>3D Modeling (Blender)</li>
+      <li>Video & Image Editing, Digital Marketing</li>
+    </ul>
+  </section>
 
-    <!-- ===== Footer ===== -->
-    <footer>
-        <p>© 2025 Chandramohan M | All Rights Reserved</p>
-    </footer>
+  <section id="projects" class="section projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>Text → Emoji Converter</li>
+      <li>Text → Audio Converter</li>
+      <li>YouTube Clone</li>
+    </ul>
+  </section>
 
-    <script src="script.js"></script>
+  <section id="certificates" class="section certificates">
+    <h2>Certificates</h2>
+    <p>ML, DL, DevOps, Gen AI, AI Automation, Excel, Power BI, Blender, etc.</p>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:chandramohanm2005@gmail.com">chandramohanm2005@gmail.com</a></p>
+    <p>Phone: 8825736187</p>
+    <p>
+      <a href="https://github.com/Chandramohan-us" target="_blank">GitHub</a> | 
+      <a href="https://www.linkedin.com/in/chandramohan-m-09545935b" target="_blank">LinkedIn</a>
+    </p>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="formStatus"></p>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>© 2025 Chandramohan M | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
