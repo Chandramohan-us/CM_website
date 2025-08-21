@@ -1,16 +1,30 @@
-(function(){
-    emailjs.init("YOUR_PUBLIC_KEY"); // Replace with EmailJS public key
-})();
+// Highlight active menu while scrolling
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-links a");
 
-document.getElementById("contact-form").addEventListener("submit", function(event) {
-    event.preventDefault();
+window.onscroll = () => {
+  let current = "";
 
-    emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
-        .then(function() {
-            alert("✅ Message sent successfully!");
-            document.getElementById("contact-form").reset();
-        }, function(error) {
-            alert("❌ Failed to send message. Please try again.");
-            console.error("Error:", error);
-        });
+  sections.forEach(sec => {
+    const top = window.scrollY;
+    const offset = sec.offsetTop - 100;
+    const height = sec.offsetHeight;
+    if (top >= offset && top < offset + height) {
+      current = sec.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.remove("active");
+    if (link.getAttribute("href") === "#" + current) {
+      link.classList.add("active");
+    }
+  });
+};
+
+// Dummy form submission (replace with EmailJS if you want real emails)
+document.getElementById("contactForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  document.getElementById("formStatus").innerText = "Message Sent (demo only)";
 });
+
